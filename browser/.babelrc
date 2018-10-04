@@ -11,7 +11,7 @@
     },
     "test": {
       "presets": [
-        ["env", {"targets": {"node": "10"}}]
+        ["@babel/env", {"targets": {"node": "10"}}]
       ],
       "plugins": [
         ["@babel/plugin-proposal-decorators", {"legacy": true}],
