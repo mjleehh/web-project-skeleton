@@ -4,7 +4,7 @@ This repo contains some web abb skeleton projects for classes taught at Fachhoch
 
 For all projects make sure you have NodeJS 10 and npm installed.
 
-### Simple NodeJS Backend 
+### Simple NodeJS Backend
 
 `/backend`
 
@@ -58,10 +58,10 @@ npm start
 ```
 This will open a browser window. The page will reload on code changes.
 Start coding in `src/index.jsx`
- 
-Another option is using [create-react-app](https://github.com/facebook/create-react-app) 
- 
- 
+
+Another option is using [create-react-app](https://github.com/facebook/create-react-app)
+
+
 ### Elm Web App
 
 `elm`
@@ -71,12 +71,12 @@ A very basic elm application.
 You needn't install any packages to run this app. Elm caches all packages and the `elm make` command will
 install dependencies for you. What you will need to install is elm-live:
 ```bash
-npm install --global elm-live
+npm install --global elm elm-live
 ```
 
 To start the app for development on port `:8000` run
 ```bash
-elm-live src/Main.elm
+./start
 ```
 
 You can also consider using [create-elm-app](https://github.com/halfzebra/create-elm-app)
