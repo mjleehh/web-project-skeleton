@@ -6,7 +6,8 @@
       ],
       "plugins": [
         ["@babel/plugin-proposal-decorators", {"legacy": true}],
-        "@babel/proposal-object-rest-spread"
+        "@babel/proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties"
       ]
     },
     "test": {
@@ -15,7 +16,8 @@
       ],
       "plugins": [
         ["@babel/plugin-proposal-decorators", {"legacy": true}],
-        "@babel/proposal-object-rest-spread"
+        "@babel/proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties"
       ]
     }
   }
