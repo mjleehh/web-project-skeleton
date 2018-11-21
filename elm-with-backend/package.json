@@ -1,5 +1,5 @@
 {
-  "name": "fh-app-with-backend-skeleton",
+  "name": "fh-elm-with-backend-skeleton",
   "version": "1.0.0",
   "description": "App with backend skeleton for PM102 and MI133 classes.",
   "scripts": {
