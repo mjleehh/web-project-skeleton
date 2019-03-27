@@ -32,7 +32,7 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([{from: 'app.yaml'}]),
         new HtmlWebpackPlugin({template: INDEX_HTML}),
-        new CleanWebpackPlugin([OUTPUT_FOLDER]),
+        new CleanWebpackPlugin(),
     ],
     devtool: 'source-map',
 }
