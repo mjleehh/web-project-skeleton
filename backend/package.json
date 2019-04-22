@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Backend skeleton for PM102 and MI133 classes.",
   "scripts": {
-    "start": "npx nodemon --exec npx babel-node -- ./src/index.js"
+    "start": "npx nodemon --exec npx babel-node -- ./src/index.js",
+    "once": "npx babel-node -- ./src/index.js"
   },
   "author": "Michael Jonathan Lee",
   "dependencies": {
