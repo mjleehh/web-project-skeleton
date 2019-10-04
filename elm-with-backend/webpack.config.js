@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path')
 
@@ -42,7 +42,7 @@ module.exports = (env, argv) => {
         plugins: [
             new CopyWebpackPlugin([{from: 'app.yaml'}]),
             new HtmlWebpackPlugin({template: INDEX_HTML}),
-            new CleanWebpackPlugin([OUTPUT_FOLDER]),
+            new CleanWebpackPlugin(),
         ],
         devServer: {
             proxy: {
