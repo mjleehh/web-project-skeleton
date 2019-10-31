@@ -1,0 +1,31 @@
+{
+  "name": "fh-elm-js-skeleton",
+  "version": "1.0.0",
+  "description": "elm app with JS interop for the MI136 class.",
+  "scripts": {
+    "start": "./scripts/start-app.sh",
+    "deploy": "export PROJECT_NAME=`cat project_name` && cd dist && gcloud app deploy --project $PROJECT_NAME"
+  },
+  "author": "Michael Jonathan Lee",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "elm-webpack-loader": "^6.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
