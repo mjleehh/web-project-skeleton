@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
 const path = require('path')
 
@@ -17,7 +16,7 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: 'ts-loader',
+                use: 'babel-loader',
                 exclude: /node_modules/
             },
             {
@@ -27,12 +26,9 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     plugins: [
-        new CopyWebpackPlugin({
-            patterns: [{from: 'app.yaml'}]
-        }),
         new HtmlWebpackPlugin({template: INDEX_HTML}),
         new CleanWebpackPlugin(),
         new ESLintPlugin({extensions: ['js', 'jsx', 'ts', 'tsx']}),
