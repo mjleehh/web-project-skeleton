@@ -2,18 +2,20 @@
   "env": {
     "development": {
       "presets": [
-        ["@babel/env", {"targets": {"chrome": "69", "firefox": "62"}}],
-        "@babel/preset-react"
+        ["@babel/env", {"targets": {"chrome": "91", "firefox": "89"}}],
+        "@babel/preset-react",
+        "@babel/preset-typescript"
       ],
       "plugins": [
         ["@babel/plugin-proposal-decorators", {"legacy": true}],
         "@babel/proposal-object-rest-spread",
-        "@babel/plugin-proposal-class-properties"
+        "@babel/plugin-proposal-class-properties",
       ]
     },
     "test": {
       "presets": [
-        ["@babel/env", {"targets": {"node": "10"}}]
+        ["@babel/env", {"targets": {"node": "10"}}],
+        "@babel/preset-typescript"
       ],
       "plugins": [
         ["@babel/plugin-proposal-decorators", {"legacy": true}],
